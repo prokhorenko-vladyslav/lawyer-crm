@@ -1,0 +1,23 @@
+.company__info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+
+    .company__info__header {
+        width: 600px;
+        color: $header-color;
+        font-family: $header-font;
+        font-size: $header-font-size;
+    }
+
+    .company__info__text {
+        width: 600px;
+        color: $default-color;
+    }
+
+    .company__info__link {
+        margin-top: 2rem;
+    }
+}

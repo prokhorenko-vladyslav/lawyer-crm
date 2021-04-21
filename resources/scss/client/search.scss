@@ -1,0 +1,12 @@
+.search {
+    .search__input {
+        .icon {
+            margin-right: 1rem;
+            transform: rotate(90deg);
+
+            * {
+                height: $form-element-height;
+            }
+        }
+    }
+}

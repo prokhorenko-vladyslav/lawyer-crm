@@ -11,7 +11,7 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
-        //
-    ]);
+mix.browserSync('laurel.lawyer.loc')
+    .js('resources/js/client/app.js', 'public/js/client')
+    .sass('resources/scss/client/app.scss', 'public/css/client')
+    .copyDirectory('resources/img', 'public/img');

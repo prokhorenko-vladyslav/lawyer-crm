@@ -1,0 +1,15 @@
+footer {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+
+    .footer__circle {
+        position: absolute;
+        bottom: -130%;
+        width: 120%;
+        height: 200%;
+        background: #9B9BCA;
+        border-radius: 50%;
+        left: -10%;
+    }
+}

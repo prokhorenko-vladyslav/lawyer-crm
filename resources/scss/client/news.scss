@@ -1,0 +1,56 @@
+.news__section {
+    position: relative;
+    margin-bottom: 17rem;
+
+    .news {
+        .news__circle {
+            position: absolute;
+            border-radius: 50%;
+            background: #FFEDEF;
+            z-index: -1;
+
+            &.news__circle_left {
+                left: -15%;
+                top: 15%;
+                width: 700px;
+                height: 700px;
+            }
+
+            &.news__circle_right {
+                right: -5%;
+                top: 35%;
+                width: 500px;
+                height: 500px;
+            }
+
+            &.news__circle_small_first {
+                right: 33%;
+                top: 85%;
+                width: 200px;
+                height: 200px;
+            }
+
+            &.news__circle_small_second {
+                right: 62%;
+                top: 100%;
+                width: 50px;
+                height: 50px;
+            }
+
+            &.news__circle_small_third {
+                right: 66%;
+                top: 112%;
+                width: 30px;
+                height: 30px;
+            }
+
+            &.news__circle_small_fourth {
+                right: 69%;
+                top: 122%;
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+
+}

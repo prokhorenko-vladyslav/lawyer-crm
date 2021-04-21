@@ -1,0 +1,153 @@
+body {
+    font-family: $default-font;
+    font-size: $default-font-size;
+    overflow-x: hidden;
+}
+
+.link {
+    border: none;
+    color: $default-color;
+    font-family: $text-font;
+    font-size: $text-font-size;
+    text-decoration: none;
+    text-align: center;
+    transition: $default-transition;
+
+    &.accent {
+        padding: .7rem 3rem;
+        border-radius: $border-radius;
+        background: $accent-color;
+        color: $accent-text-color;
+    }
+
+    &:hover {
+        color: $hover-color;
+
+        &.accent {
+            box-shadow: $default-shadow;
+            color: $accent-text-color;
+        }
+    }
+
+    &, * {
+        cursor: pointer;
+    }
+}
+
+.header {
+    color: $subheader-color;
+    text-align: center;
+    font-family: $subheader-font;
+    font-size: $subheader-font-size;
+}
+
+.header-description {
+    width: 30rem;
+    margin: 1rem auto;
+    color: $header-description-color;
+    text-align: center;
+    font-family: $header-description-font;
+    font-size: $header-description-font-size;
+}
+
+.section {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.input__group {
+    display: flex;
+}
+
+.input {
+    flex-basis: 100%;
+    height: $form-element-height;
+    padding: $form-element-padding;
+    border: $form-element-border;
+    border-radius: $form-element-border-radius;
+    font-size: $form-element-font-size;
+    transition: $default-transition;
+
+    &:focus {
+        border: $form-element-focus-border;
+    }
+
+    &::placeholder {
+        font-style: $form-element-font-style;
+    }
+}
+
+.card-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    flex-basis: 100%;
+    max-width: 330px;
+    margin: 1rem;
+    padding: 3rem 2rem 6rem 2rem;
+    border: $card-border;
+    border-radius: $card-border-radius;
+    box-shadow: $card-box-shadow;
+
+    .card__photo {
+        width: 100%;
+        border-radius: $card-photo-border-radius;
+        overflow: hidden;
+
+        > * {
+            width: 100%;
+        }
+    }
+
+    .card__title,
+    .card__date,
+    .card__description {
+        text-align: center;
+    }
+
+    .card__title {
+        margin-top: 2rem;
+        color: $card-title-color;
+        font-weight: $card-title-font-weight;
+        font-size: $card-title-font-size;
+    }
+
+    .card__date {
+        color: $card-date-color;
+        font-size: $card-date-font-size;
+    }
+
+    .card__description {
+        color: $card-description-color;
+        font-size: $card-description-font-size;
+    }
+
+    .card__link {
+        position: relative;
+        bottom: -7.5rem;
+    }
+
+    .card__label {
+        width: 100%;
+        margin-bottom: .7rem;
+    }
+
+    .card__input {
+        width: 100%;
+        margin-bottom: 1.5rem;
+
+        input {
+            width: 100%;
+        }
+    }
+
+    .card__submit {
+
+    }
+}
